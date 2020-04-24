@@ -11,5 +11,6 @@ get: $(WORKDIR)
 
 $(WORKDIR):
 	git clone --depth=1 -b $(TAG) $(REPO) $(WORKDIR)
+	( cd $(WORKDIR) && git apply ../quickchick.patch )
 	cp -r dune-files/ $(WORKDIR)
 

@@ -1,0 +1,11 @@
+diff --git a/src/dune b/src/dune
+index 9be6306..fbcf249 100644
+--- a/src/dune
++++ b/src/dune
+@@ -27,5 +27,5 @@
+
+ (coq.theory
+  (name QuickChick)
+- (public_name quickchick)
++ (package coq-quickchick)
+  (libraries quickchick.plugin))
