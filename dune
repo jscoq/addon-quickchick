@@ -1,0 +1,13 @@
+
+(rule
+ (targets coq-pkgs)
+ (deps
+  (package coq-quickchick)
+  workdir/src/quickchick_plugin.cma)
+ (action
+  (run jscoq build workdir/src
+                   --load ../extlib/coq-pkgs/extlib.coq-pkg
+                   --load ../simpleio/coq-pkgs/simpleio.coq-pkg
+                   --top QuickChick --package coq-pkgs/quickchick.coq-pkg)))
+
+(dirs workdir)
