@@ -6,8 +6,13 @@
   workdir/src/quickchick_plugin.cma)
  (action
   (run jscoq build workdir/src
+                   --load ../mathcomp/coq-pkgs/mathcomp-ssreflect.coq-pkg
                    --load ../extlib/coq-pkgs/extlib.coq-pkg
                    --load ../simpleio/coq-pkgs/simpleio.coq-pkg
                    --top QuickChick --package coq-pkgs/quickchick.coq-pkg)))
+
+(alias
+ (name all)
+ (deps package.json))
 
 (dirs workdir)

@@ -1,5 +1,5 @@
 REPO = https://github.com/QuickChick/QuickChick.git
-TAG = 8.11
+TAG = 8.12
 WORKDIR = workdir
 
 .PHONY: all get
