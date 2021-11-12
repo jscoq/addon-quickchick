@@ -2,8 +2,8 @@
 (rule
  (targets coq-pkgs)
  (deps
-  (package coq-quickchick)
-  workdir/src/quickchick_plugin.cma)
+  (package quickchick)
+  workdir/plugin/quickchick_plugin.cma)
  (action
   (run npx %{env:pkgtool=jscoq} build workdir/src --top QuickChick
                    --load ../mathcomp/coq-pkgs/mathcomp-ssreflect.coq-pkg

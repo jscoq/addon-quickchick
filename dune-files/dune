@@ -1,2 +1,2 @@
 ; skip examples and tests
-(dirs src)
+(dirs src plugin)
