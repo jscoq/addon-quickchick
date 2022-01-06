@@ -5,11 +5,10 @@
   (package quickchick)
   workdir/plugin/quickchick_plugin.cma)
  (action
-  (run npx %{env:pkgtool=jscoq} build workdir/src --top QuickChick
+  (run npx %{env:pkgtool=jscoq} build --workspace %{dep:quickchick.json}
                    --load ../mathcomp/coq-pkgs/mathcomp-ssreflect.coq-pkg
                    --load ../extlib/coq-pkgs/extlib.coq-pkg
-                   --load ../simpleio/coq-pkgs/simpleio.coq-pkg
-                   --package coq-pkgs/quickchick.coq-pkg)))
+                   --load ../simpleio/coq-pkgs/simpleio.coq-pkg)))
 
 (alias
  (name all)
