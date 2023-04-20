@@ -1,6 +1,5 @@
 REPO = https://github.com/QuickChick/QuickChick.git
-TAG = v1.6.3
-COMMIT = 30b60f5dda3df68114f450f3e094bc7a28b841e6
+TAG = v2.0
 WORKDIR = workdir
 
 # Git boilerplate
